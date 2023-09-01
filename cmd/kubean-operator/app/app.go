@@ -129,7 +129,6 @@ func setupManager(mgr controllerruntime.Manager, opt *Options, stopChan <-chan s
 	clusterController := &cluster.Controller{
 		Client:              mgr.GetClient(),
 		ClientSet:           ClientSet,
-		KubeanClusterSet:    clusterClientSet,
 		KubeanClusterOpsSet: clusterClientOperationSet,
 	}
 	// the message type
